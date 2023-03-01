@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link href="index.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <div>
+            <div>
+                <button onclick="adicionarResultado(1)">1</button>
+                <button onclick="adicionarResultado(2)">2</button>
+                <button onclick="adicionarResultado(3)">3</button>
+            </div>
+            <div>
+                <button onclick="adicionarResultado(4)">4</button>
+                <button onclick="adicionarResultado(5)">5</button>
+                <button onclick="adicionarResultado(6)">6</button>
+            </div>
+            <div>
+                <button onclick="adicionarResultado(7)">7</button>
+                <button onclick="adicionarResultado(8)">8</button>
+                <button onclick="adicionarResultado(9)">9</button>
+            </div>
+            <div>
+                <button onclick="adicionarOperador('*')">*</button>
+                <button onclick="adicionarOperador('+')">+</button>
+                <button onclick="adicionarOperador('-')">-</button>
+                <button onclick="adicionarOperador('/')">/</button>
+                <button onclick="resultado()">=</button>
+            </div>
+            <div>
+                <div id="valor1"></div>
+                <div id="operador"></div>
+                <div id="valor2"></div>
+                <div id="resultado"></div>
+            </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+
+</html>
