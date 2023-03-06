@@ -1,11 +1,12 @@
 function adicionarResultado(valor) {
     var valor1= document.getElementById("valor1")
     var valor2= document.getElementById('valor2')
-    if(valor1.innerHTML == ''){
-        valor1.innerHTML = valor
+    var op= document.getElementById('operador')
+    if(valor1.innerHTML == '' || op.innerHTML == ''){
+        valor1.innerHTML += valor
     }
     else {
-        valor2.innerHTML = valor
+        valor2.innerHTML += valor
 
     }
     
@@ -23,9 +24,21 @@ function resultado() {
     var valor2= document.getElementById('valor2')
     var op= document.getElementById('operador')
     var resultado= document.getElementById('resultado')
-
-    if(op == '*') {
+    console.log(op.innerHTML) 
+    if(op.innerHTML == '*') {
         resultado.innerHTML= valor1.innerHTML * valor2.innerHTML
+    }
+
+    if(op.innerHTML == '+'){
+        resultado.innerHTML= Number(valor1.innerHTML) + Number(valor2.innerHTML)
+    }
+
+    if(op.innerHTML == '-') {
+        resultado.innerHTML= valor1.innerHTML - valor2.innerHTML
+    }
+
+    if(op.innerHTML == '/') {
+        resultado.innerHTML= valor1.innerHTML / valor2.innerHTML
     }
 
 }
